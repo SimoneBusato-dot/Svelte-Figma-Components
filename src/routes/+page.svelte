@@ -20,7 +20,7 @@
     }
 
     #title h1{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 4rem;
         position: relative;
         padding-bottom: 2vh ;
