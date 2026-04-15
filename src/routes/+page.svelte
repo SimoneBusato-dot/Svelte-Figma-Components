@@ -25,6 +25,7 @@
         position: relative;
         padding-bottom: 2vh ;
         user-select: none;
+        
     }
 
     #title h1::after{
