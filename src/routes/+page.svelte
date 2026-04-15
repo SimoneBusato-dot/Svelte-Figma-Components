@@ -30,11 +30,11 @@
     #title h1::after{
            content: '';
            width: 100%;
-           height: 10%;
+           height: 7%;
            position: absolute;
            background-color: black;
            border-radius: 20px;
            left: 0;
-           bottom: 0;
+           bottom: 2%;
     }
 </style>
