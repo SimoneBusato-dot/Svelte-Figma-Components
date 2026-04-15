@@ -30,12 +30,17 @@
 
     #title h1::after{
            content: '';
-           width: 100%;
+           width: 0;
            height: 7%;
            position: absolute;
            background-color: black;
            border-radius: 20px;
            left: 0;
            bottom: 2%;
+           animation: underline 1s ease 0.5s forwards;
     }
+
+       @keyframes underline{
+           to{width: 100%;}
+       }
 </style>
