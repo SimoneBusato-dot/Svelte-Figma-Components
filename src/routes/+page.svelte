@@ -1,2 +1,40 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+
+
+<div id="title">
+<h1>Figma Components
+</h1>
+</div>
+
+
+<style>
+
+   *{
+    overflow: hidden;
+   }
+    #title{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 4rem;
+        position: relative;
+        padding-bottom: 2vh ;
+        user-select: none;
+    }
+
+    #title h1::after{
+           content: '';
+           width: 100%;
+           height: 10%;
+           position: absolute;
+           background-color: black;
+           border-radius: 20px;
+           left: 0;
+           bottom: 0;
+    }
+</style>
