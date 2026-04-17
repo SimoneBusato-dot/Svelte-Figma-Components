@@ -1,4 +1,5 @@
 <script lang="ts">
+  import NavBar from '$lib/components/NavBar.svelte';
   import HeroSection from '$lib/components/HeroSection.svelte';
   import Section from '$lib/components/Section.svelte';
   import ApproachSection from '$lib/components/ApproachSection.svelte';
@@ -12,40 +13,37 @@
   // Section 3 image
   const section3Image = 'https://www.figma.com/api/mcp/asset/10888489-f1ca-4869-a8db-5a319c6ba433';
 
+  // Approach section icons
+  const iconPrecisionChisel = 'https://www.figma.com/api/mcp/asset/a06758b1-17c8-48ff-88d7-41f56c83b86b';
+  const iconEtchedMemory = 'https://www.figma.com/api/mcp/asset/c3aec1b3-1e2f-49f5-a161-b8241a813ba3';
+  const iconStructuredClarity = 'https://www.figma.com/api/mcp/asset/00cd79f9-347a-4927-ad8f-32a13a7644d8';
+  const iconInflexibleIntegrity = 'https://www.figma.com/api/mcp/asset/aa8aaa1b-51fa-4ec1-9561-d02da30137fd';
+
   // Approach cards data
   const approachCards = [
     {
       id: 1,
       title: 'Precision Chisel',
       description: 'Refining every detail with surgical accuracy',
-      icon: `<svg viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="33" cy="33" r="30" fill="currentColor" opacity="0.2"/>
-        <path d="M33 15C23 15 15 23 15 33C15 43 23 51 33 51C43 51 51 43 51 33C51 23 43 15 33 15ZM33 38C30 38 28 36 28 33C28 30 30 28 33 28C36 28 38 30 38 33C38 36 36 38 33 38Z" fill="currentColor"/>
-      </svg>`
+      icon: `<img src="${iconPrecisionChisel}" alt="Precision Chisel" style="width: 100%; height: 100%; object-fit: contain;" />`
     },
     {
       id: 2,
       title: 'Etched in Memory',
       description: 'Creating lasting impressions through design',
-      icon: `<svg viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M33 15C23 15 15 23 15 33C15 43 23 51 33 51C43 51 51 43 51 33C51 23 43 15 33 15ZM38 35H30C28 35 27 34 27 32V28C27 26 28 25 30 25H38C40 25 41 26 41 28V32C41 34 40 35 38 35Z" fill="currentColor"/>
-      </svg>`
+      icon: `<img src="${iconEtchedMemory}" alt="Etched in Memory" style="width: 100%; height: 100%; object-fit: contain;" />`
     },
     {
       id: 3,
       title: 'Structured Clarity',
       description: 'Organizing complexity into comprehensible patterns',
-      icon: `<svg viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 22H48V26H18V22ZM18 32H48V36H18V32ZM18 42H48V46H18V42Z" fill="currentColor"/>
-      </svg>`
+      icon: `<img src="${iconStructuredClarity}" alt="Structured Clarity" style="width: 100%; height: 100%; object-fit: contain;" />`
     },
     {
       id: 4,
       title: 'Inflexible Integrity',
       description: 'Maintaining principles and quality standards',
-      icon: `<svg viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M33 15C23 15 15 23 15 33C15 43 23 51 33 51C43 51 51 43 51 33C51 23 43 15 33 15ZM38 35L30 43L22 35L25 32L30 37L35 32L38 35Z" fill="currentColor"/>
-      </svg>`
+      icon: `<img src="${iconInflexibleIntegrity}" alt="Inflexible Integrity" style="width: 100%; height: 100%; object-fit: contain;" />`
     }
   ];
 </script>
@@ -54,6 +52,8 @@
   <title>Studio - Data Design</title>
   <meta name="description" content="Transform raw data into unforgettable masterpieces" />
 </svelte:head>
+
+<NavBar />
 
 <HeroSection
   title="Embedded Data"
